@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ $# -ne 2 ]; then
-    echo "[*] Usage: \n sudo ./burn_iso.sh <iso_path> <device>"
+    echo -e "[*] Usage: \n sudo ./burn_iso.sh <iso_path> <device>"
     exit 1
 elif [ "$EUID" -ne 0 ]; then
     echo "[!] Please run as root"
